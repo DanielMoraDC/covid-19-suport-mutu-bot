@@ -115,6 +115,9 @@ GROUP_LIST = [
     Group(name='Jocs Florals',
           link='https://t.me/JocsFloralsSolidari',
           center=Location(latitude=41.3716, longitude=2.135)),
+    Group(name='Sant Boi de Llobregat',
+          link='https://twitter.com/xarxasantboi',
+          center=Location(latitude=41.346, longitude=2.0357)),
 ]
 
 
