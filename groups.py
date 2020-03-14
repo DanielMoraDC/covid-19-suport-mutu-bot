@@ -109,6 +109,9 @@ GROUP_LIST = [
     Group(name='El Carmel',
           link='https://twitter.com/espailatregua',
           center=Location(latitude=41.4066, longitude=2.1584)),
+    Group(name='Carrer Bonveí',
+          link='https://t.me/bonveisuportmutu',
+          center=Location(latitude=41.3751, longitude=2.1248)),
 ]
 
 
