@@ -112,6 +112,9 @@ GROUP_LIST = [
     Group(name='Carrer Bonveí',
           link='https://t.me/bonveisuportmutu',
           center=Location(latitude=41.3751, longitude=2.1248)),
+    Group(name='Jocs Florals',
+          link='https://t.me/JocsFloralsSolidari',
+          center=Location(latitude=41.3716, longitude=2.135)),
 ]
 
 
