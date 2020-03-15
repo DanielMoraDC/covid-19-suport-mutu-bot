@@ -235,6 +235,9 @@ GROUP_LIST = [
     Group(name='Nova Esquerra de l\'Eixample',
           link='https://t.me/joinchat/AJPe1xhxkBwooC_wcDT0uQ',
           center=Location(latitude=41.383, longitude=2.1491)),
+    Group(name='Sant Cugat del Vallès',
+          link='https://t.me/XarxaSuportSantCugat',
+          center=Location(latitude=41.4684, longitude=2.0804)),
 ]
 
 
