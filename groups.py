@@ -232,6 +232,9 @@ GROUP_LIST = [
     Group(name='Terrassa',
           link='https://chat.whatsapp.com/EGWyOGH9K8X4tXVsAeTcqk',
           center=Location(latitude=41.561782, longitude=2.008551)),
+    Group(name='Nova Esquerra de l\'Eixample',
+          link='https://t.me/joinchat/AJPe1xhxkBwooC_wcDT0uQ',
+          center=Location(latitude=41.383, longitude=2.1491)),
 ]
 
 
