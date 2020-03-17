@@ -286,6 +286,21 @@ GROUP_LIST = [
     Group(name='Vic',
           link='https://twitter.com/covic2020',
           center=Location(latitude=41.9308, longitude=2.2545)),
+    Group(name='Barcelona - Besós/Maresme',
+          link='https://chat.whatsapp.com/CEYJgc7SsncIuRUzEp5nGP',
+          center=Location(latitude=41.1412, longitude=2.2165)),
+    Group(name='Barcelona - Can Baró',
+          link='https://chat.whatsapp.com/CTtgpqyAzMV6E7v87kxZoO',
+          center=Location(latitude=41.4166, longitude=2.1629)),
+    Group(name='Barcelona - Gòtic/Sta Caterina/Ribera/Born',
+          link='https://t.me/BarriGoticEnXarxa',
+          center=Location(latitude=41.384995, longitude=2.180424)),
+    Group(name='Barcelona - El Poblet',
+          link='https://chat.whatsapp.com/CakCRZl2Boc6fdJE5yZBwp',
+          center=Location(latitude=41.402524, longitude=2.170314)),
+    Group(name='Barcelona - Verneda/La Pau',
+          link='https://t.me/xarxavernedalapau',
+          center=Location(latitude=41.422853, longitude=2.205490)),
 ]
 
 
