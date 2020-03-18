@@ -319,6 +319,9 @@ GROUP_LIST = [
     Group(name='Rubí',
           link='ceeixam@gmail.com',
           center=Location(latitude=41.496801, longitude=2.035134)),
+    Group(name='Barcelona - Congrés',
+          link='http://t.me/xarxacongresindians',
+          center=Location(latitude=41.424650, longitude=2.181095)),
 ]
 
 
