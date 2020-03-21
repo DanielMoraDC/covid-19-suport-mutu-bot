@@ -41,4 +41,5 @@ def buscar_grup(message):
     bot.reply_to(message, response.encode('utf-8'))
     bot.register_next_step_handler(message, buscar_grup)
 
-bot.polling()
+
+bot.polling(none_stop=True)
