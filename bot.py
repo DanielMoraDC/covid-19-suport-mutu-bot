@@ -16,7 +16,7 @@ def welcome_message(message):
     bot.reply_to(message, messages.WELCOME.encode('utf-8'))
 
 
-@bot.message_handler()
+@bot.message_handler(func=lambda m: True)
 def buscar_grup(message):
     if message.content_type == 'location':
         location = Location(latitude=message.json['location']['latitude'],
