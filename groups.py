@@ -32,7 +32,7 @@ class GroupProposal(object):
 
 GROUP_LIST = [
     Group(name='Barcelona - Sants',
-          link='badalsuperior',
+          link='https://t.me/codi19sants',
           center=Location(latitude=41.378146, longitude=2.136023)),
     Group(name='Barcelona - Badal superior',
           link='https://t.me/badalsuperior',
