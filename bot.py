@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import logging
+
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
@@ -8,7 +10,13 @@ import messages
 from locations import Location
 from groups import groups_by_distance
 
-TOKEN = '<telegram_token>'
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
+
+LOGGER = logging.getLogger()
+
 CLOSEST_GROUPS = 3
 
 
@@ -25,6 +33,8 @@ def find_group_callback(update, context):
     groups = groups_by_distance(location)
     closest = groups[:CLOSEST_GROUPS]
     groups_display_str = '\n'.join(list(map(str, closest)))
+
+    LOGGER.info(f'Received location {location}. Replying with {closest}')
 
     if closest[0].distance > 1.0:
         response = messages.LOCATIONS_CLOSE_TEMPLATE_NOK.format(
