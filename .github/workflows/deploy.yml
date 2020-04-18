@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Push to Heroku
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+      run: git push -f https://heroku:$HEROKU_API_KEY@git.heroku.com/$APP_NAME.git origin/master:master
+
+    - name: Wake worker up
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
+      run: heroku scale worker=1 -a $APP_NAME

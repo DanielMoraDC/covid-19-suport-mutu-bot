@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import logging
+import os
 
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
@@ -55,7 +56,7 @@ def not_location_callback(update, context):
 
 
 # Set token and dispatcher
-updater = Updater(token=TOKEN, use_context=True)
+updater = Updater(token=os.environ['TELEGRAM_BOT_TOKEN'], use_context=True)
 dispatcher = updater.dispatcher
 
 # Define bot start handler
